@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="./css/pagination.css">
+</head>
+<body>
+<div class="pagination-container"></div>
+
+<script src="./js/location-es6.js"></script>
+<script src="./js/pagination-draft.js"></script>
+<script>
+new Pagination({
+    paginationContainer: '.pagination-container',
+    page: url.get("page"),
+    totalNumber: 300,
+    aLink: './pagination-draft.html'
+});
+</script>
+</body>
+</html>

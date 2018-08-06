@@ -1,0 +1,29 @@
+.pagination-container{
+
+}
+.pagination-container .pagination-list{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.pagination-container .pagination-list .pagination-item{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+.pagination-container .pagination-list .pagination-item a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.pagination-container .pagination-list .pagination-item a.pagination-link{
+    border: 1px solid pink;
+}
+.pagination-container .pagination-list .pagination-item a.pagination-active{
+    color: pink;
+}
+.pagination-container .previous-page{
+    text-decoration: none;
+}
+.pagination-container .next-page{
+    text-decoration: none;
+}
