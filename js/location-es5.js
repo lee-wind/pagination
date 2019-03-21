@@ -1,4 +1,4 @@
-let url = {
+var url = {
     get: function(parameterName){
         var locationSearch = window.location.search;
         if(locationSearch.indexOf("?") >= 0){
@@ -7,7 +7,7 @@ let url = {
         var queryStringArr = locationSearch.split("&");
         var parameterValue = '';
         queryStringArr.forEach(function(queryString){
-            let keyValueArr = queryString.split("=");
+            var keyValueArr = queryString.split("=");
             console.log(keyValueArr);
             if(keyValueArr[0] === parameterName){
                 console.log(keyValueArr[1]);

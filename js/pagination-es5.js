@@ -239,5 +239,6 @@ Pagination.prototype.renderPagination = function(){
     this.documentFragment.appendChild(ulEl);
     this.createPreviousPage();
     this.createNextPage();
+    this.paginationContainer.innerHTML = '';
     this.paginationContainer.appendChild(this.documentFragment);
 };
