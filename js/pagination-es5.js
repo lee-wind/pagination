@@ -6,7 +6,7 @@ function Pagination(options){
     this.totalNumber = options.totalNumber;
     this.startPage = 0;
     this.endPage = 0;
-    this.actualPageCount = this.totalNumber / this.pageSize;
+    this.actualPageCount = Math.ceil(this.totalNumber / this.pageSize);
     this.documentFragment = document.createDocumentFragment();
     this.aLink = options.aLink.indexOf("?") >= 0 ? options.aLink + "&" : options.aLink + "?";
     this.paging();
